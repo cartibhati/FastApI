@@ -33,11 +33,15 @@ The system consists of:
 ---
 
 ## ⚙️ Project Structure
-├── app.py # FastAPI backend (ML inference API)
-├── frontend.py # Streamlit frontend
+
+```text
+.
+├── app.py          # FastAPI backend (ML inference API)
+├── frontend.py     # Streamlit frontend
 ├── requirements.txt
-├── model.pkl # Trained ML model (not tracked in Git)
+├── model.pkl       # Trained ML model (not tracked in Git)
 └── README.md
+
 
 
 ---
