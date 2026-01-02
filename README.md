@@ -1,53 +1,36 @@
-# Insurance Premium Category Prediction System
+# Patient Management System API
 
-An end-to-end **Machine Learning project** that predicts the insurance premium
-category for a user based on demographic and lifestyle information.
+A **FastAPI-based REST API** for managing patient records with full CRUD
+(Create, Read, Update, Delete) functionality.
 
-The system consists of:
-- A **FastAPI backend** that serves an ML prediction API
-- A **Streamlit frontend** that provides an interactive UI for users
+This project focuses on learning **backend development fundamentals**
+using FastAPI and Pydantic.
 
 ---
 
 ## 🚀 Features
-- ML-based insurance premium category prediction
-- FastAPI backend with input validation using Pydantic
-- Feature engineering using computed fields:
-  - BMI
-  - Age group
-  - Lifestyle risk
-  - City tier
-- Streamlit frontend for easy user interaction
-- Clean separation of backend and frontend
+- Create, view, update, and delete patient records
+- Input validation using **Pydantic**
+- JSON-based data storage
+- Sorting patients by attributes like height, weight, and BMI
+- Auto-generated API documentation using **Swagger (OpenAPI)**
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Technologies Used
 - Python
 - FastAPI
 - Pydantic
-- Scikit-learn
-- Pandas
-- Streamlit
+- Uvicorn
+- JSON
 
 ---
 
 ## ⚙️ Project Structure
-
 ```text
 .
-├── app.py          # FastAPI backend (ML inference API)
-├── frontend.py     # Streamlit frontend
+├── app.py              # FastAPI backend
+├── patients.json       # Patient data storage
+├── pydantic_tutorial/  # Pydantic practice files
 ├── requirements.txt
-├── model.pkl       # Trained ML model (not tracked in Git)
 └── README.md
-
-
-
----
-
-## ▶️ How to Run Locally
-
-### 1️⃣ Install dependencies
-```bash
-pip install -r requirements.txt
