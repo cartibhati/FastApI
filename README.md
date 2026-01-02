@@ -1,30 +1,53 @@
-# Patient Management System API
+# Insurance Premium Category Prediction System
 
-A RESTful API built using **FastAPI** and **Pydantic** to manage patient records with
-full CRUD functionality and computed health metrics.
+An end-to-end **Machine Learning project** that predicts the insurance premium
+category for a user based on demographic and lifestyle information.
+
+The system consists of:
+- A **FastAPI backend** that serves an ML prediction API
+- A **Streamlit frontend** that provides an interactive UI for users
 
 ---
 
-## Features
-- Create, view, update, and delete patient records
-- Request and response validation using Pydantic
-- Computed fields:
+## 🚀 Features
+- ML-based insurance premium category prediction
+- FastAPI backend with input validation using Pydantic
+- Feature engineering using computed fields:
   - BMI
-  - Health verdict
-- Sort patients by height, weight, or BMI
-- Auto-generated API documentation using Swagger (OpenAPI)
+  - Age group
+  - Lifestyle risk
+  - City tier
+- Streamlit frontend for easy user interaction
+- Clean separation of backend and frontend
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 - Python
 - FastAPI
 - Pydantic
-- JSON (file-based storage)
+- Scikit-learn
+- Pandas
+- Streamlit
 
 ---
 
-## How to Run Locally
+## ⚙️ Project Structure
+
+```text
+.
+├── app.py          # FastAPI backend (ML inference API)
+├── frontend.py     # Streamlit frontend
+├── requirements.txt
+├── model.pkl       # Trained ML model (not tracked in Git)
+└── README.md
+
+
+
+---
+
+## ▶️ How to Run Locally
+
+### 1️⃣ Install dependencies
 ```bash
-pip install fastapi uvicorn
-uvicorn main:app --reload
+pip install -r requirements.txt
